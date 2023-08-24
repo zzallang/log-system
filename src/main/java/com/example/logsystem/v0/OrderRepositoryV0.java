@@ -2,7 +2,8 @@ package com.example.logsystem.v0;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
-@Repository
+
+@Repository //
 @RequiredArgsConstructor
 public class OrderRepositoryV0 {
     public void save(String itemId) {
@@ -12,6 +13,7 @@ public class OrderRepositoryV0 {
         }
         sleep(1000);
     }
+
     private void sleep(int millis) {
         try {
             Thread.sleep(millis);
